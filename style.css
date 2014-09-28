@@ -1,0 +1,44 @@
+.bannierephoto {
+	margin: 30px;
+}
+.bannierephoto .cadre {
+	width: 80%;
+	height: 100%;
+	padding-bottom: 10%;
+	max-width: 220px;
+	max-height: 274px;
+	background-color: #FFFFFF;
+	border: 1px solid black;
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,1.5);
+}
+.bannierephoto .cadre a.polaroidlink:link {
+	color: black;
+	text-decoration: none;
+}
+.bannierephoto .cadre .photo {
+	width: 90%;
+	height: 90%;
+	background-color: rgba(0,0,0,0);
+	margin-top: 5%;
+	margin-left: 5%;
+}
+.bannierephoto .cadre .shadow {
+    display: block;
+    position: relative;
+}
+.bannierephoto .cadre .shadow::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,1.5) inset; 	/* bordure intérieure autour de la photo */
+}
+.bannierephoto .cadre span.polaroidtext {
+	font-family: 'Molle', cursive;
+	font-size: 1.2em;
+	color: black;
+	text-decoration: none;
+}
+.bannierephoto .cadre .polaroidimg {
+	max-width: 100%;
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+    <name>Polaroïd Boxes</name>
+    <author>Alexandre Achain</author>
+    <version>0.0.1</version>
+    <description>Display a picture in a css polaroid.</description>
+    <files>
+        <filename>mod_polaroidboxes.xml</filename>
+        <filename module="mod_polaroidboxes">mod_polaroidboxes.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>style.css</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+    	<fields name="params">
+    		<fieldset name="basic">
+    			<field name="polaroid_text" type="text" maxlength="15" label="Label Text" description="Texte qui s'affiche sur les polaroids."/>
+    			<field name="polaroid_angle" type="integer" first="-20" last="20" step="1" default="0" label="Inclinaison" description="Angle d'inclinaison : de -20 (vers la gauche), à 20 (vers la droite)."/>
+    			<field name="polaroid_img" type="media" directory="" label="Photo" description="Choix de la photo à charger."/>
+    			<field name="polaroid_img_alt" type="text" maxlength="50" label="Alt text" description="Texte alternatif de l'image pour les navigateurs textuels."/>
+    			<field name="polaroid_link" type="URL" label="Lien Web" description="Page web vers laquelle on est dirigée lorsque l'on clique sur le lien."/>
+    		</fieldset>
+    	</fields>
+    </config>
+</extension>
