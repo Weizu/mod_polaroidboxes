@@ -1,6 +1,6 @@
 # Polaroid Boxes
 
-I present to you a little Joomla! module to display images and photos in a CSS polaroid appaerence.
+I present to you a little Joomla module to display images and photos in a CSS polaroid appaerence.
 
 ## About
 
